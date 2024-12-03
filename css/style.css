@@ -119,6 +119,11 @@ a{
     margin-right: 10px;
 }
 
+.btn:hover{
+    font-size: 14px;
+    padding: 12px 42px;
+}
+
 
 
 
@@ -183,7 +188,11 @@ a{
 
 /* banner per effettuare l'upgrade */
     .btn{
-        font-size: 15px;
+        font-size: 14px;
+    }
+    .btn:hover{
+        font-size: 16px;
+        padding: 12px 42px;
     }
     
 }
