@@ -4,7 +4,116 @@
     box-sizing: border-box;
 }
 
+/*************************************************************************  
+                        LARGE DESKTOP FIRST
+**************************************************************************/
+
+/* General settings */
 body{
   font-family: "Montserrat", serif;
     font-weight: 400;
+}
+
+/* WRAPPER SECTION */
+
+#wrapper{
+    height:calc(100vh - 150px);
+    /* debug */
+    background-color: rgba(0, 0, 255, 0.336);
+}
+
+/* Barra di navigazione laterale */
+#wrapper nav{
+    width: 250px;
+    height: 100%;
+    background-color:#000000;
+}
+
+/* Contenuto principale pagina */
+#wrapper main{
+    overflow: auto;
+    height: 100%;
+    width: calc(100%-250px);
+
+}
+
+
+
+
+
+
+
+
+/* PLAYER SECTION */
+
+#player{
+    height: 150px;
+    background-color: #282828;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************************************  
+                        MEDIUM DESKTOP VIEW
+**************************************************************************/
+@media screen and (max-width:1199px) {
+    
+}
+
+
+
+/*************************************************************************  
+                            TABLET VIEW
+**************************************************************************/
+@media screen and (max-width:991px) {
+    
+}
+
+
+
+/*************************************************************************  
+                            MOBILE VIEW
+**************************************************************************/
+@media screen and (max-width:767px) {
+
+/* WRAPPER SECTION */
+
+/* Barra di navigazione laterale */
+#wrapper nav{
+    width: 80px;
+    height: 100%;
+    background-color:#000000;
+}
+
+/* Contenuto principale pagina */
+#wrapper main{
+    overflow: auto;
+    height: 100%;
+    width: calc(100%-80px);
+
+}
+    
 }
