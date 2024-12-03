@@ -13,6 +13,10 @@ body{
   font-family: "Montserrat", serif;
     font-weight: 400;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 
 /* WRAPPER SECTION */
 
@@ -34,7 +38,6 @@ body{
 #logo{
     display: flex;
     align-items: center;
-    
     height: 100px;
     padding: 20px;
 
@@ -45,6 +48,39 @@ body{
 
 #logo-small{
     display: none;
+}
+
+/* parte di menù */
+#nav-menu li{
+    margin-bottom: 12px;
+   
+}
+#nav-menu a{
+    display: flex;
+    align-items: center;
+    color: grey;
+    padding-left: 20px;
+}
+#nav-menu a:hover {
+    color: white;
+}
+#nav-menu a:hover .ico-menu{
+    fill-opacity: 100%;   
+}
+
+#nav-menu .active {
+    color: white;
+    border-left:1px solid orange;
+}
+#nav-menu .active .ico-menu {
+   fill-opacity: 100%;
+}
+
+
+.ico-menu{
+    width: 25px;
+    margin-right: 5px;
+    fill-opacity: 50%;
 }
 
 
@@ -76,8 +112,6 @@ body{
 }
 
 .btn{
-    text-decoration: none;
-    color: white;
     font-size: 12px;
     padding: 10px 40px;
     border: 1px solid white;
@@ -128,6 +162,14 @@ body{
                         MEDIUM DESKTOP VIEW
 **************************************************************************/
 @media screen and (max-width:1199px) {
+    /* WRAPPER SECTION */
+    /* Barra di navigazione laterale */
+    /* parte di menù */
+    .ico-menu{
+        width: 30px;
+    }
+    
+
     
 }
 
@@ -157,7 +199,7 @@ body{
 
 /* Barra di navigazione laterale */
 #wrapper nav{
-    width: 80px;
+    width: 60px;
     height: 100%;
     background-color:#000000;
 }
@@ -166,7 +208,8 @@ body{
 #logo{
     justify-content: center;
     height: 50px;
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     padding: 0;
 }
 #logo-big{
@@ -174,7 +217,21 @@ body{
 }
 #logo-small{
     display: inline;
-    width: 40px;
+    width: 35px;
+}
+
+
+/* parte di menù */
+
+#nav-menu a{
+   justify-content: center;
+   padding: 0;
+}
+#nav-menu a span{
+    display: none;
+}
+.ico-menu{
+    margin: 0;
 }
 
 
@@ -183,7 +240,7 @@ body{
 #wrapper main{
     overflow: auto;
     height: 100%;
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
 
 }
     
