@@ -30,22 +30,59 @@ body{
     background-color:#000000;
 }
 
+/* logo spotify */
+#logo{
+    display: flex;
+    align-items: center;
+    
+    height: 100px;
+    padding: 20px;
+
+}
+#logo-big{
+    width: 150px;
+}
+
+#logo-small{
+    display: none;
+}
+
+
+
+
+
+
+
+
 /* Contenuto principale pagina */
 #wrapper main{
     overflow: auto;
     height: 100%;
     width: calc(100% - 250px);
-    background-color: red;
+    background-color: #141922;
 }
 
 
 /* banner per effettuare l'upgrade */
 #banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: sticky;
     top: 0;
     height: 100px;
     width: 100%;
     background-color: #00000072;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 10px;
 }
 
 
@@ -100,6 +137,12 @@ body{
                             TABLET VIEW
 **************************************************************************/
 @media screen and (max-width:991px) {
+
+
+/* banner per effettuare l'upgrade */
+    .btn{
+        font-size: 15px;
+    }
     
 }
 
@@ -118,6 +161,23 @@ body{
     height: 100%;
     background-color:#000000;
 }
+
+/* logo spotify */
+#logo{
+    justify-content: center;
+    height: 50px;
+    margin: 5px;
+    padding: 0;
+}
+#logo-big{
+   display: none;
+}
+#logo-small{
+    display: inline;
+    width: 40px;
+}
+
+
 
 /* Contenuto principale pagina */
 #wrapper main{
