@@ -120,7 +120,7 @@ a{
 
 
 #mylist{
-    max-height: 20vh;
+    max-height: 30vh;
     overflow: auto;
 }
 #mylist li{
@@ -144,10 +144,11 @@ a{
 #footer-nav{
     position: absolute;
     bottom: 0;
-
-    /* debug */
-    height: 90px;
+    background-color: #000000;
+    height: 100px;
     width: 100%;
+    
+    /* debug */
     /* background-color: red; */
 }
 
@@ -156,6 +157,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding-top: 10px;
     padding-bottom: 10px;
     border-bottom:1px solid #4c4c4c;
     margin: 0 18px;
@@ -225,7 +227,7 @@ a{
     padding: 10px 40px;
     border: 1px solid white;
     border-radius: 50px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 /* hover for btn */
@@ -249,9 +251,35 @@ a{
 /* PLAYER SECTION */
 
 #player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 150px;
     background-color: #282828;
 }
+
+.pl {
+
+    /* debug */
+    height: 50px;
+    border: 1px dashed red;
+}
+
+#pl-left{
+    width: 250px;
+    padding-left: 20px;
+}
+
+#pl-center{
+    width: 35%;
+}
+
+#pl-right{
+    width: 20%;
+    padding-right: 20px;
+}
+
+
 
 
 
@@ -311,8 +339,19 @@ a{
         font-size: 16px;
         padding: 12px 42px;
     }
-    
+    /* PLAYER SECTION */
+
+    #pl-left{
+    width: 180px;
+    padding-left: 20px;
+    }
+
+
+
 }
+
+
+
 
 
 
@@ -412,5 +451,21 @@ a{
     width: calc(100% - 60px);
 
 }
+/* PLAYER SECTION */
+
+#pl-left{
+    width: 20%;
+    padding-left: 20px;
+}
+
+#pl-center{
+    width: 35%;
+}
+
+#pl-right{
+    width: 25%;
+    padding-right: 20px;
+}
+
     
 }
