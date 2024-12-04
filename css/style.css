@@ -13,16 +13,27 @@ body{
   font-family: "Montserrat", serif;
     font-weight: 400;
 }
+
+li{
+    list-style: none;
+}
+
 a{
     text-decoration: none;
     color: white;
 }
 
+.text{
+    color: #4c4c4c;
+    font-weight: 600;
+}
+
+
 /* WRAPPER SECTION */
 
 #wrapper{
-    height:calc(100vh - 300px);
     display: flex;
+    height:calc(100vh - 150px);
     /* debug */
     background-color: rgba(0, 0, 255, 0.336);
 }
@@ -32,6 +43,7 @@ a{
     width: 250px;
     height: 100%;
     background-color:#000000;
+    position: relative;
 }
 
 /* logo spotify */
@@ -61,30 +73,127 @@ a{
     color: grey;
     padding-left: 20px;
 }
-#nav-menu a:hover {
-    color: white;
-}
-#nav-menu a:hover .ico-menu{
-    fill-opacity: 100%;   
-}
 
 #nav-menu .active {
     color: white;
     border-left:1px solid orange;
 }
-#nav-menu .active .ico-menu {
+#nav-menu .active .ico{
    fill-opacity: 100%;
 }
 
-
-.ico-menu{
+.ico{
     width: 25px;
     margin-right: 5px;
     fill-opacity: 50%;
 }
 
+/* hover for nav menu */
+#nav-menu a:hover {
+    color: white;
+}
+#nav-menu a:hover .ico{
+    fill-opacity: 100%;   
+}
+
+/* Playlist */
+#playlist {
+    margin: 30px 20px 0 20px;
+    color: white;
+}
+
+#playlist #create{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.fa-plus{
+    background-color: #a3a3a3;
+    color: black;
+    font-size: 30px;
+    padding: 6px 8px;
+    margin-right: 10px;
+}
 
 
+#mylist{
+    max-height: 20vh;
+    overflow: auto;
+}
+#mylist li{
+    line-height: 2.5;
+}
+
+/* hover for playlist */
+#playlist span:hover {
+    color: white;
+}
+#playlist a:hover .fa-plus{
+    background-color: white;
+}
+#playlist a:hover {
+    color: white;
+}
+
+
+
+/* footer nav-bar */
+#footer-nav{
+    position: absolute;
+    bottom: 0;
+
+    /* debug */
+    height: 90px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+/* download*/
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    border-bottom:1px solid #4c4c4c;
+    margin: 0 18px;
+}
+
+.download .ico{
+    width: 20px;
+}
+
+/* profilo utente */
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 18px;
+}
+
+.profile .ico{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    fill: white;
+    background-color: #4c4c4c;
+    border-radius: 9999px;
+}
+
+.profile .text {
+    color: white;
+}
+
+/* hover for footer-nav */
+
+#footer-nav span:hover {
+    color: white;
+}
+#footer-nav a:hover .ico{
+    fill-opacity: 100%;   
+}
 
 
 
@@ -119,10 +228,16 @@ a{
     margin-right: 10px;
 }
 
+/* hover for btn */
+
 .btn:hover{
     font-size: 14px;
     padding: 12px 42px;
 }
+
+
+
+
 
 
 
@@ -170,7 +285,7 @@ a{
     /* WRAPPER SECTION */
     /* Barra di navigazione laterale */
     /* parte di menù */
-    .ico-menu{
+    .ico{
         width: 30px;
     }
     
@@ -190,6 +305,8 @@ a{
     .btn{
         font-size: 14px;
     }
+
+    /* hover for btn */
     .btn:hover{
         font-size: 16px;
         padding: 12px 42px;
@@ -239,8 +356,51 @@ a{
 #nav-menu a span{
     display: none;
 }
-.ico-menu{
+.ico{
     margin: 0;
+}
+
+/* Playlist */
+#playlist {
+    display: none;
+}
+
+/* footer nav-bar */
+#footer-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* download */
+.download{
+    display: block;
+    padding-bottom:0;
+    border-bottom:none;
+    margin: 0;
+}
+
+.download .ico{
+    width: 30px;
+    padding-right: 4px;
+}
+.download .text {
+    display: none;
+}
+
+/* profilo utente */
+
+.profile{
+    margin-top: 10px;
+}
+.profile .ico{
+    width: 35px;
+    height: 35px;
+    margin:0;
+}
+
+.profile .text{
+    display: none;
 }
 
 
