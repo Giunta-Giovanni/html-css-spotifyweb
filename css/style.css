@@ -38,7 +38,6 @@ a{
 
 .bar{
     width: 100%;
-    margin: 0;
     background-color: grey;
     height: 5px;
     border-radius: 5px;
@@ -65,7 +64,7 @@ a{
 
 #wrapper{
     display: flex;
-    height:calc(100vh - 150px);
+    height:calc(100vh - 130px);
     /* debug */
     background-color: rgba(0, 0, 255, 0.336);
 }
@@ -153,7 +152,7 @@ a{
 
 #mylist{
     /* max-height: 30vh; */
-    max-height: calc(50vh - 250px);
+    max-height: calc(100vh - 550px);
     overflow: auto;
 }
 #mylist li{
@@ -161,7 +160,7 @@ a{
 }
 
 /* hover for playlist */
-#playlist span:hover {
+#playlist a:hover span{
     color: white;
 }
 #playlist a:hover .fa-plus{
@@ -223,7 +222,7 @@ a{
 
 /* hover for footer-nav */
 
-#footer-nav span:hover {
+#footer-nav a:hover span{
     color: white;
 }
 #footer-nav a:hover .ico{
@@ -287,14 +286,14 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: 130px;
     background-color: #282828;
 }
 
 .pl {
     height:60px;
     /* debug */
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 }
 
 /* parte sinistra del player */
@@ -308,16 +307,17 @@ a{
 }
 
 #pl-left img{
-    /* debug */
     height: 100%;
     margin-right: 10px;
-    border: 1px dashed black;
+    /* debug */
+    /* border: 1px dashed black; */
 }
 #pl-left a{
+
     margin-right: 5px;
     /* debug */
     /* background-color: red; */
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 #pl-left .title{
@@ -365,6 +365,71 @@ color: white;
     margin: 0 auto;
 }
 
+/* parte superiore con i bottoni */
+#btn-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 20px auto;
+    font-size: 25px;
+    min-height: 50px;
+    /* debug */
+    /* background-color: red; */
+    /* height: 50px; */
+}
+
+#btn-panel .space{
+    margin:0 10px;
+}
+
+.fa-circle-play{
+    font-size: 40px;
+    margin: 0 30px;
+    min-width: 45px;
+    text-align: center;
+    
+}
+
+.fa-circle-play:hover{
+    font-size: 45px;
+}
+
+/* parte inferiore con barra di riproduzione */
+#play-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    width: 10%;
+    color: white;
+    margin: 0 10px;
+}
+
+#play-bar{
+   width:88%; 
+}
+
+#play-bar .bar-pct{
+    width: 50%;
+}
+
+#play-bar .bar-point{
+    display: none;
+}
+#play-bar:hover .bar-pct{
+    background-color: green;
+}
+
+#play-bar:hover .bar-point{
+    display: block;
+}
+
+
+
+
+
 
 
 
@@ -396,6 +461,9 @@ color: white;
 }
 #pl-right .bar-point{
  display: none;
+}
+#pl-right .bar:hover .bar-pct{
+    background-color: green;
 }
 #pl-right .bar:hover .bar-point{
  display: block;
@@ -445,6 +513,20 @@ color: white;
     }
     
 
+/* PLAYER SECTION */
+
+/* parte centrale del player */
+/* parte inferiore con barra di riproduzione */
+
+#play-panel .time{
+    width: 10%;
+
+}
+
+#play-bar{
+   width:70%; 
+}
+
     
 }
 
@@ -457,37 +539,51 @@ color: white;
 
 
 /* banner per effettuare l'upgrade */
-    .btn{
-        font-size: 14px;
+.btn{
+    font-size: 14px;
+}
+
+/* hover for btn */
+.btn:hover{
+    font-size: 16px;
+    padding: 12px 42px;
+}
+
+
+/* PLAYER SECTION */
+
+#pl-left{
+    width: 25%;
     }
 
-    /* hover for btn */
-    .btn:hover{
-        font-size: 16px;
-        padding: 12px 42px;
-    }
-    /* PLAYER SECTION */
 
-    #pl-left{
-        width: 25%;
-        }
+#pl-left a{
+    margin-right: 5px;
+}
 
 
-    #pl-left a{
-        margin-right: 5px;
-    }
-    
-    
-    .fa-heart,
-    .fa-folder{
-        margin: 5px 0;
-        display: block;
+.fa-heart,
+.fa-folder{
+    margin: 5px 0;
+    display: block;
+}
+
+
+
+#play-bar{
+    width:50%; 
     }
 
-    #pl-right div a{
-        margin-right: 15px;
-        font-size: 18px;
-       }
+    .time{
+    width: 45%;
+    color: white;
+    margin: 0 10px;
+}
+
+#pl-right div a{
+    margin-right: 15px;
+    font-size: 18px;
+    }
 }
 
 
