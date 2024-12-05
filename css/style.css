@@ -137,6 +137,12 @@ a{
     height: 100%; /* Puoi personalizzare l'altezza in active*/
 }
 
+#nav-menu a:active {
+    color: white;
+}
+#nav-menu a:active .ico{
+    fill-opacity: 100%;   
+}
 /* Hover For Nav Menu*/
 #nav-menu a:hover {
     color: white;
@@ -327,6 +333,9 @@ a{
 }
 #category a:active:after {
     width: 50%; /* La linea si estende completamente */
+}
+#category a:active{
+    color: white;
 }
 
 /*Hover For Category */
