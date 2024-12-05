@@ -114,15 +114,27 @@ a{
     align-items: center;
     color: grey;
     padding-left: 20px;
+    position: relative;
 }
 
-/* esempio di click attivo */
-#nav-menu .active {
-    color: white;
-    border-left:1px solid orange;
+/* click attivo */
+#nav-menu .active:after {
+    content: ""; /* Necessario per visualizzare lo pseudo-elemento */
+    position: absolute;
+    top: 50%; /* Centra la linea verticalmente rispetto al testo */
+    left: 0; /* Posiziona la linea sul lato destro */
+    transform: translateY(-50%); /* Allinea il centro della linea */
+    width: 2px; /* Spessore della linea */
+    height: 50%; /* Altezza più piccola rispetto al testo */
+    background-color: #99e22d; /* Colore della linea */
+    opacity: 0; /* Inizia invisibile */
+    transition: opacity 0.3s ease, height 0.3s ease; /* Animazione fluida */
 }
-#nav-menu .active .ico{
-   fill-opacity: 100%;
+
+
+#nav-menu .active:active:after {
+    opacity: 1; /* Rende la linea visibile */
+    height: 100%; /* Puoi personalizzare l'altezza in active*/
 }
 
 /* Hover For Nav Menu*/
