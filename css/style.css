@@ -253,6 +253,7 @@ a{
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
     height: 100px;
     width: 100%;
     background-color: #00000072;
@@ -264,6 +265,7 @@ a{
     border: 1px solid white;
     border-radius: 50px;
     margin-right: 20px;
+    
 }
 
 /* hover for btn */
@@ -285,7 +287,7 @@ a{
     /* debug */
     /* height: 50px; */
     /* background-color: red; */
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 #category li{ 
@@ -294,10 +296,25 @@ a{
 }
 
 #category a{
-    color: #4c4c4c;
+    color: #5d6066;
     margin: 0 12px;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
 
+#category a:after {
+    content: ""; /* Necessario per creare l'elemento */
+    position: absolute;
+    bottom: -5px; /* Linea sotto il testo */
+    left: 25%;
+    width: 0; /* Larghezza iniziale: invisibile */
+    height: 2px; /* Altezza della linea */
+    background-color: #a8f72e; /* Colore della linea */
+    transition: width 0.3s ease; /* Animazione fluida */
+}
+#category a:active:after {
+    width: 50%; /* La linea si estende completamente */
 }
 
 /*Hover For Category */
@@ -306,22 +323,32 @@ a{
     color: white;
 }
 
+
+
 /* Multimedia */
 main .space{
     margin:50px 20px 20px 20px;
+
     /* debug */
     /* background-color: red; */
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     /* height: 500px; */
 }
 
-.container-media h2{
+main .title{
     color: white;
     font-size: 30px;
+
     /* debug */
     /* background-color: red; */
     /* width: 100%; */
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
+}
+main .Subtitle{
+    color: #6c6f75;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
 }
 
 .row{
@@ -330,18 +357,21 @@ main .space{
     gap:0 1.67% ;
     margin: 40px 0;
     width: 100%;
+
+    /* debug */
     /* background-color: red; */
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     /* height: 200px; */
     
 }
 
 .col {
     width: 15%;
-    /* debug */
-    background-color: #000000;
-    border: 1px dashed white;
     margin-bottom: 20px;
+
+    /* debug */
+    /* background-color: #000000; */
+    /* border: 1px dashed white; */
 }
 
 .photo{
@@ -350,6 +380,10 @@ main .space{
 
 .col img {
     max-width: 100%;
+}
+
+.circle{
+    border-radius: 50%
 }
 
 .col .fa-circle-play{
