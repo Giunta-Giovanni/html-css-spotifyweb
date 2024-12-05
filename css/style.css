@@ -312,7 +312,7 @@ main .space{
     /* debug */
     /* background-color: red; */
     border: 1px dashed white;
-    height: 500px;
+    /* height: 500px; */
 }
 
 .container-media h2{
@@ -326,8 +326,8 @@ main .space{
 
 .row{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap:0 1.67% ;
     margin: 40px 0;
     width: 100%;
     /* background-color: red; */
@@ -341,6 +341,7 @@ main .space{
     /* debug */
     background-color: #000000;
     border: 1px dashed white;
+    margin-bottom: 20px;
 }
 
 .photo{
@@ -354,6 +355,20 @@ main .space{
 .col .fa-circle-play{
     display: none;
 }
+
+.col h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.col h4{
+    margin-top: 8px;
+    text-align: center;
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 
 /* Hover for colonna multimediale */
 .col a:hover img{
@@ -620,6 +635,20 @@ color: white;
         font-size: 35px;
     }
 
+    /* Multimedia */
+    .row{
+        gap: 0 2%;
+    }
+    .col{
+        width: 23%;
+    }
+    .col h3{
+        font-size: 15px;
+    }
+    .col h4{
+        font-size: 13px;
+    }
+
 /* PLAYER SECTION */
 
     /* parte centrale del player */
@@ -664,6 +693,17 @@ color: white;
         font-size: 14px;
         margin: 0 8px;
     }
+
+    /* Multimedia */
+    .row{
+       gap: 0 2%;
+    }
+
+    .col{
+        width: 48%;
+        margin-right: 0;
+    }
+
 
 
 /* PLAYER SECTION */
