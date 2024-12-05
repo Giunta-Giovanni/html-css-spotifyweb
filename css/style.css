@@ -117,7 +117,17 @@ a{
     position: relative;
 }
 
-/* click attivo */
+
+
+/* Hover For Nav Menu*/
+#nav-menu a:hover {
+    color: white;
+}
+#nav-menu a:hover .ico{
+    fill-opacity: 100%;   
+}
+
+/* Active for Nav Menu */
 #nav-menu .active:after {
     content: ""; /* Necessario per visualizzare lo pseudo-elemento */
     position: absolute;
@@ -130,8 +140,6 @@ a{
     opacity: 0; /* Inizia invisibile */
     transition: opacity 0.3s ease, height 0.3s ease; /* Animazione fluida */
 }
-
-
 #nav-menu .active:active:after {
     opacity: 1; /* Rende la linea visibile */
     height: 100%; /* Puoi personalizzare l'altezza in active*/
@@ -143,13 +151,7 @@ a{
 #nav-menu a:active .ico{
     fill-opacity: 100%;   
 }
-/* Hover For Nav Menu*/
-#nav-menu a:hover {
-    color: white;
-}
-#nav-menu a:hover .ico{
-    fill-opacity: 100%;   
-}
+
 
 
 /* Playlist */
@@ -321,6 +323,15 @@ a{
     position: relative;
 }
 
+
+
+/*Hover For Category */
+
+#category a:hover{
+    color: white;
+}
+
+/* Active For Category */
 #category a:after {
     content: ""; /* Necessario per creare l'elemento */
     position: absolute;
@@ -331,19 +342,14 @@ a{
     background-color: #a8f72e; /* Colore della linea */
     transition: width 0.3s ease; /* Animazione fluida */
 }
+
 #category a:active:after {
     width: 50%; /* La linea si estende completamente */
 }
+
 #category a:active{
     color: white;
 }
-
-/*Hover For Category */
-
-#category a:hover{
-    color: white;
-}
-
 
 
 /* Multimedia */
