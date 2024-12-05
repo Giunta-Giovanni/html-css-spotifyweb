@@ -246,7 +246,6 @@ a{
     background-color: #141922;
 }
 
-
 /* Banner per effettuare l'upgrade */
 #banner{
     display: flex;
@@ -268,10 +267,108 @@ a{
 }
 
 /* hover for btn */
-
 .btn:hover{
     font-size: 14px;
     padding: 12px 42px;
+}
+
+
+/* Zona Multimediale */
+/* categorie della pagina */
+#category{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    /* debug */
+    /* height: 50px; */
+    /* background-color: red; */
+    border: 1px dashed white;
+}
+
+#category li{ 
+    line-height: 3;
+
+}
+
+#category a{
+    color: #4c4c4c;
+    margin: 0 12px;
+    font-size: 15px;
+
+}
+
+/*Hover For Category */
+
+#category a:hover{
+    color: white;
+}
+
+/* Multimedia */
+main .space{
+    margin:50px 20px 20px 20px;
+    /* debug */
+    /* background-color: red; */
+    border: 1px dashed white;
+    height: 500px;
+}
+
+.container-media h2{
+    color: white;
+    font-size: 30px;
+    /* debug */
+    /* background-color: red; */
+    /* width: 100%; */
+    border: 1px dashed white;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    width: 100%;
+    /* background-color: red; */
+    border: 1px dashed white;
+    /* height: 200px; */
+    
+}
+
+.col {
+    width: 15%;
+    /* debug */
+    background-color: #000000;
+    border: 1px dashed white;
+}
+
+.photo{
+    position: relative;
+}
+
+.col img {
+    max-width: 100%;
+}
+
+.col .fa-circle-play{
+    display: none;
+}
+
+/* Hover for colonna multimediale */
+.col a:hover img{
+    max-width: 100%;
+    opacity: 0.5;
+}
+.col a:hover .fa-circle-play{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+
 }
 
 
@@ -517,6 +614,11 @@ color: white;
         width: 30px;
     }
     
+    /* Zona Multimediale */
+    /* categorie della pagina */
+    .container-media h2{
+        font-size: 35px;
+    }
 
 /* PLAYER SECTION */
 
@@ -553,6 +655,14 @@ color: white;
     .btn:hover{
         font-size: 14px;
         padding: 10px 30px;
+    }
+    
+    /* Zona Multimediale */
+    /* categorie della pagina */
+
+    #category a{
+        font-size: 14px;
+        margin: 0 8px;
     }
 
 
@@ -722,8 +832,10 @@ color: white;
         overflow: auto;
         height: 100%;
         width: calc(100% - 60px);
-
     }
+
+    /* Zona Multimediale */
+
 
 /* PLAYER SECTION */
 
